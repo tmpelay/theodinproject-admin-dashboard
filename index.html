@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin Dashboard | The Odin Project</title>
+  </head>
+  <body>
+    <aside class="dashboard__side-bar">
+      <div class="side-bar__header">
+        <span class="side-bar__header-icon mdi mdi-view-dashboard"></span>
+        <h1 class="side-bar__title">Dashboard</h1>
+      </div>
+      <div class="side-bar__list">
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-home"></span>
+          <a href="#" class="side-bar__link">Home</a>
+        </div>
+        <div class="side-bar__link-container">
+          <span
+            class="side-bar__link-icon mdi mdi-card-account-details-outline"
+          ></span>
+          <a href="#" class="side-bar__link">Profile</a>
+        </div>
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-message"></span>
+          <a href="#" class="side-bar__link">Messages</a>
+        </div>
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-clock-time-four"></span>
+          <a href="#" class="side-bar__link">History</a>
+        </div>
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-note-multiple"></span>
+          <a href="#" class="side-bar__link">Tasks</a>
+        </div>
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-account-group"></span>
+          <a href="#" class="side-bar__link">Communities</a>
+        </div>
+      </div>
+      <div class="side-bar__list">
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-cog"></span>
+          <a href="#" class="side-bar__link">Settings</a>
+        </div>
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-help-box"></span>
+          <a href="#" class="side-bar__link">Support</a>
+        </div>
+        <div class="side-bar__link-container">
+          <span class="side-bar__link-icon mdi mdi-shield-check"></span>
+          <a href="#" class="side-bar__link">Privacy</a>
+        </div>
+      </div>
+    </aside>
+    <div class="dashboard-page__container">
+      <header class="dashboard-page__header">
+        <div class="header__wrapper">
+          <div class="header__search">
+            <span class="search__icon mdi mdi-magnify"></span>
+            <input type="text" class="search__input" />
+          </div>
+          <div class="header__buttons">
+            <span class="header__notifications mdi mdi-bell-ring"></span>
+            <img
+              class="header__profile-button"
+              src="assets/graphics/profile.png"
+              alt="profile picture"
+            />
+            <h2 class="header__name">Morgan Oakley</h2>
+          </div>
+        </div>
+        <div class="header__wrapper">
+          <div class="header-bar__wrapper">
+            <img
+              class="header-bar__profile-pic"
+              src="assets/graphics/profile.png"
+              alt="profile picture"
+            />
+            <div class="header-bar__user-info">
+              <p class="header-bar__hi">Hi there,</p>
+              <h2 class="header-bar__name">Morgan Oakley (@morgan)</h2>
+            </div>
+          </div>
+          <nav class="header-bar__nav">
+            <ul>
+              <li><a href="/" class="header-bar__link">New</a></li>
+              <li><a href="/" class="header-bar__link">Upload</a></li>
+              <li><a href="/" class="header-bar__link">Share</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="dashboard__container"></main>
+    </div>
+  </body>
+</html>

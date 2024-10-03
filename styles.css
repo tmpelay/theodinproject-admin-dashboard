@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Montserrat;
+}
+
+/* --- Sidebar Section --- */
+
+.dashboard__side-bar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1992d4;
+  padding: 12px 16px;
+  color: #fafafa;
+  gap: 32px;
+}
+
+.side-bar__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.side-bar__header-icon {
+  font-size: 2.6em;
+}
+
+.side-bar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side-bar__link-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.side-bar__link-icon {
+  font-size: 1.2em;
+}
+
+.side-bar__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* --- Header Section --- */
+
+.dashboard-page__container {
+  flex: 1;
+  background-color: #e2e8f0;
+}
+
+.dashboard-page__header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 52px;
+}
+
+.header__search {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 50%;
+}
+
+.search__icon {
+  font-size: 1.2em;
+}
+
+.search__input {
+  border: none;
+  background-color: #e2e8f0;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.header__notifications {
+  font-size: 1.4em;
+}
+
+.header__profile-button {
+  width: 52px;
+  border-radius: 50%;
+}
+
+.header__name {
+  font-size: 1.1em;
+}
+
+.header-bar__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-bar__profile-pic {
+  width: 72px;
+  border-radius: 50%;
+}
+
+.header-bar__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  list-style: none;
+}
+
+.header-bar__link {
+  background-color: #1992d4;
+  text-decoration: none;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 10px 24px;
+  border-radius: 20px;
+}
