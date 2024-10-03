@@ -59,6 +59,8 @@ body {
 
 .dashboard-page__container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   background-color: #e2e8f0;
 }
 
@@ -141,4 +143,36 @@ body {
   font-size: 0.8em;
   padding: 10px 24px;
   border-radius: 20px;
+}
+
+/* --- Dashboard section --- */
+
+.dashboard__container {
+  width: 100%;
+  flex: 1;
+}
+
+.dashboard__grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "projects projects projects announcements"
+    "projects projects projects trending";
+}
+
+.dashboard__projects {
+  background-color: red;
+  grid-area: projects;
+}
+
+.dashboard__announcements {
+  background-color: yellow;
+  grid-area: announcements;
+}
+
+.dahsboard__trending {
+  background-color: green;
+  grid-area: trending;
 }
